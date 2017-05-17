@@ -25,7 +25,7 @@ for f in source_files:
 for f in source_files:
     subprocess.call(["inkscape", f, "--export-plain-svg=generated/" + os.path.splitext(f)[0] + ".svg"])
 
-subprocess.call(["webicon.sh", "sunpy_icon.svg"])
+subprocess.call(["./webicon.sh", "sunpy_icon.svg"])
 
 # Remove full-res PNGs since these aren't needed
 #rm generated/sunpy_logo.png

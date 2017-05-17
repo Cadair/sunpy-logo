@@ -114,11 +114,11 @@ generate_png 310
 
 echo "Generating ico"
 $CONVERT_CMD \
-"$PWD/$IMAGE_NAME-16.png" \
-"$PWD/$IMAGE_NAME-32.png" \
-"$PWD/$IMAGE_NAME-48.png" \
-"$PWD/$IMAGE_NAME-64.png" \
--background $TRANSPARENT_COLOUR "$PWD/$IMAGE_NAME.ico"
+"$PWD/generated/favicon/$IMAGE_NAME-16.png" \
+"$PWD/generated/favicon/$IMAGE_NAME-32.png" \
+"$PWD/generated/favicon/$IMAGE_NAME-48.png" \
+"$PWD/generated/favicon/$IMAGE_NAME-64.png" \
+-background $TRANSPARENT_COLOUR "$PWD/generated/favicon/$IMAGE_NAME.ico"
 
 ######################################
 # OUTPUT USEFUL MARKUP
